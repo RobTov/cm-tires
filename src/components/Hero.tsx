@@ -8,7 +8,7 @@ import { FaPhone } from "react-icons/fa";
 const heroImages = [
   "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&q=80",
   "https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=1920&q=80",
-  "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80",
+  "images/bg-1.jpeg",
 ];
 
 export default function Hero() {
