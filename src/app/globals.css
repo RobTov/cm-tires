@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #b61516;
+  --color-primary-light: #d41a1a;
+  --color-primary-dark: #8f1010;
+  --color-dark: #1a1a1a;
+  --color-dark-secondary: #2a2a2a;
+  --color-gray-custom: #d0d0d0;
+  --color-gray-medium: #9ca3af;
+  --color-bg-light: #f8f8f8;
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-light);
+  color: var(--color-dark);
+}
+
+::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
