@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&q=80",
+    src: "/images/gallery1.jpg",
     alt: "Tire replacement",
     span: "col-span-2 row-span-2",
   },
@@ -37,7 +37,7 @@ const images = [
     span: "col-span-2 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=80",
+    src: "/images/gallery-1.jpg",
     alt: "Tire shop",
     span: "col-span-1 row-span-1",
   },

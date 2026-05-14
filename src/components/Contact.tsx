@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -70,7 +70,7 @@ export default function Contact() {
                       {t.contact.address}
                     </p>
                     <p className="text-gray-medium text-xs mt-0.5">
-                      2C2W+M5 Wylie, Texas, EE. UU.
+                      2C2W+M5 Wylie, Texas, {lang === "es" ? "EE. UU." : "USA"}
                     </p>
                   </div>
                 </a>
