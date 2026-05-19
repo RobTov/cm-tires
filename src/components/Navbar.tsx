@@ -52,26 +52,31 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <button
             onClick={() => scrollTo("home")}
-            className="flex items-center gap-2 group"
+            className="flex items-center gap-3 group"
           >
             <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary flex items-center justify-center font-bold text-white text-sm md:text-base transition-transform group-hover:scale-105">
               CM
             </div>
-            <span className="text-white font-bold text-sm md:text-lg tracking-tight">
-              C&M Tires & Muffler
-            </span>
+            <div className="flex items-center gap-3">
+              <span className="text-white font-bold text-sm md:text-lg tracking-tight">
+                C&M Tires & Muffler
+              </span>
+              <span className="hidden sm:inline-flex text-[10px] md:text-xs font-semibold text-white bg-primary/90 px-2.5 py-1 rounded-full leading-tight whitespace-nowrap">
+                {t.discount.badge}
+              </span>
+            </div>
           </button>
 
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden md:flex items-center gap-2">
             {sectionIds.map((id) => (
               <button
                 key={id}
                 onClick={() => scrollTo(id)}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={`px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
                   activeSection === id
                     ? "text-primary bg-white/10"
                     : "text-gray-custom hover:text-white hover:bg-white/5"
@@ -80,7 +85,7 @@ export default function Navbar() {
                 {t.nav[id as keyof typeof t.nav]}
               </button>
             ))}
-            <div className="ml-4 pl-4 border-l border-white/20 flex items-center gap-2">
+            <div className="ml-6 pl-6 border-l border-white/20 flex items-center gap-3">
               <button
                 onClick={() => setLanguage("en")}
                 className={`flex items-center gap-1.5 px-2 py-1.5 rounded-md text-xs font-medium transition-all ${

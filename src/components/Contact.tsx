@@ -8,7 +8,7 @@ import {
   FaPhoneAlt,
   FaWhatsapp,
   FaFacebook,
-  FaHeart,
+  FaShieldAlt,
 } from "react-icons/fa";
 
 export default function Contact() {
@@ -112,11 +112,23 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="flex items-center gap-2 px-5 py-3 rounded-xl bg-primary/5 border border-primary/10">
-              <FaHeart className="text-primary text-sm" />
-              <span className="text-sm font-medium text-dark">
-                {t.contact.lgbtq}
-              </span>
+            <div className="rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 to-primary/10 p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center text-primary shrink-0">
+                  <FaShieldAlt className="text-xl" />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-base font-bold text-dark">
+                    {t.discount.title}
+                  </h3>
+                  <p className="text-sm text-dark/80 leading-relaxed">
+                    {t.discount.subtitle}
+                  </p>
+                  <p className="text-xs text-gray-medium italic">
+                    {t.discount.valid}
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
 

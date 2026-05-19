@@ -17,28 +17,48 @@ const images = [
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&q=80",
+    src: "/images/gallery-brake.jpg",
     alt: "Brake repair",
     span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=600&q=80",
+    src: "https://images.unsplash.com/photo-1530046339160-ce3e530c7d2f?w=400&q=80",
     alt: "Engine diagnostic",
-    span: "col-span-2 row-span-1",
+    span: "col-span-1 row-span-1",
   },
   {
     src: "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=400&q=80",
     alt: "Auto repair",
-    span: "col-span-1 row-span-2",
+    span: "col-span-1 row-span-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1504222490345-c075b6008014?w=600&q=80",
-    alt: "Muffler exhaust",
-    span: "col-span-2 row-span-1",
+    src: "https://images.unsplash.com/photo-1504222490345-c075b6008014?w=400&q=80",
+    alt: "Exhaust system",
+    span: "col-span-1 row-span-1",
   },
   {
     src: "/images/gallery-1.jpg",
     alt: "Tire shop",
+    span: "col-span-1 row-span-1",
+  },
+  {
+    src: "/images/gallery-oil.jpg",
+    alt: "Oil change",
+    span: "col-span-2 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&q=80",
+    alt: "Car repair",
+    span: "col-span-2 row-span-1",
+  },
+  {
+    src: "/images/gallery-mechanic.jpg",
+    alt: "Professional mechanic",
+    span: "col-span-1 row-span-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&q=80",
+    alt: "Tire service",
     span: "col-span-1 row-span-1",
   },
 ];

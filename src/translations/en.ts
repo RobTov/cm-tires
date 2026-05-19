@@ -51,13 +51,19 @@ export const en = {
   schedule: {
     title: "Business Hours",
   },
+  discount: {
+    badge: "Veterans & First Responders: 10% OFF",
+    title: "We Support Our Heroes",
+    subtitle:
+      "As a thank you for your service, we offer a 10% discount to all veterans, and first responders (police, fire, EMS).",
+    valid: "Valid with valid ID. Cannot be combined with other offers.",
+  },
   contact: {
     title: "Get In Touch",
     address: "1300 Martinez Ln, Wylie, TX 75098",
     phone: "+1 (972) 442-8395",
     whatsapp: "WhatsApp",
     facebook: "Facebook",
-    lgbtq: "LGBTQ+ Friendly",
     map: "View on Google Maps",
   },
   footer: {
