@@ -6,7 +6,6 @@ import { useLanguage } from "@/context/LanguageContext";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
-  FaWhatsapp,
   FaFacebook,
   FaShieldAlt,
 } from "react-icons/fa";
@@ -16,7 +15,7 @@ export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const whatsappUrl = "https://wa.me/19724428395";
+  const callUrl = "tel:+19724428395";
   const facebookUrl = "https://www.facebook.com/cmtireswylie";
   const phoneUrl = "tel:+19724428395";
   const mapsUrl =
@@ -93,13 +92,11 @@ export default function Contact() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-[#25D366] text-white font-semibold transition-all hover:bg-[#20bd5a] hover:shadow-lg hover:shadow-[#25D366]/30"
+                href={callUrl}
+                className="flex-1 flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-primary text-white font-semibold transition-all hover:bg-primary-light hover:shadow-lg hover:shadow-primary/30"
               >
-                <FaWhatsapp className="text-xl" />
-                {t.contact.whatsapp}
+                <FaPhoneAlt className="text-xl" />
+                {t.contact.call}
               </a>
               <a
                 href={facebookUrl}

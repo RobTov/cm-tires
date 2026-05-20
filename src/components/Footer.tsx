@@ -85,7 +85,7 @@ export default function Footer() {
                   {t.contact.phone}
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://wa.me/19724428395"
                   target="_blank"
@@ -95,7 +95,7 @@ export default function Footer() {
                   <FaWhatsapp className="shrink-0" />
                   {t.contact.whatsapp}
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="https://www.facebook.com/cmtireswylie"

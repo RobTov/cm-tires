@@ -52,7 +52,7 @@ export const es = {
     title: "Horario de Atención",
   },
   discount: {
-    badge: "Veteranos y Socorristas: 10% DESCUENTO",
+    badge: "Veteranos y First Responders: 10% DESCUENTO",
     title: "Apoyamos a Nuestros Héroes",
     subtitle:
       "Como agradecimiento por su servicio, ofrecemos un 10% de descuento a todos los veteranos y socorristas (policía, bomberos, EMS).",
@@ -62,7 +62,7 @@ export const es = {
     title: "Contáctenos",
     address: "1300 Martinez Ln, Wylie, TX 75098",
     phone: "+1 (972) 442-8395",
-    whatsapp: "WhatsApp",
+    call: "Llámenos",
     facebook: "Facebook",
     map: "Ver en Google Maps",
   },

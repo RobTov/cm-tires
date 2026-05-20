@@ -62,7 +62,7 @@ export const en = {
     title: "Get In Touch",
     address: "1300 Martinez Ln, Wylie, TX 75098",
     phone: "+1 (972) 442-8395",
-    whatsapp: "WhatsApp",
+    call: "Call Us",
     facebook: "Facebook",
     map: "View on Google Maps",
   },
