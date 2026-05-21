@@ -41,7 +41,15 @@ export const en = {
       },
       {
         name: "Wheel Alignment",
-        description: "Professional wheel alignment to extend tire life and improve handling. State inspection services available.",
+        description: "Professional wheel alignment to extend tire life and improve handling.",
+      },
+      {
+        name: "Rim Repairs",
+        description: "Rim repair and refinishing services. We fix bent rims, curb rash, and corrosion on all wheel types.",
+      },
+      {
+        name: "State Inspections",
+        description: "Complete state inspection services to keep your vehicle compliant with Texas regulations.",
       },
     ],
   },

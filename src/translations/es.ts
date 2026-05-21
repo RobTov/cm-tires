@@ -43,6 +43,14 @@ export const es = {
         name: "Alineación",
         description: "Alineación profesional de ruedas para extender la vida de las llantas y mejorar el manejo. Inspección estatal disponible.",
       },
+      {
+        name: "Reparación de Rines",
+        description: "Reparación y restauración de rines. Arreglamos rines doblados, ralladuras y corrosión en todo tipo de llantas.",
+      },
+      {
+        name: "Inspección Estatal",
+        description: "Servicio completo de inspección estatal para mantener su vehículo en regla con las regulaciones de Texas.",
+      },
     ],
   },
   gallery: {

@@ -11,9 +11,19 @@ import {
   FaCogs,
   FaOilCan,
   FaRoad,
+  FaTools,
 } from "react-icons/fa";
 
-const iconMap = [FaCar, FaFilter, FaWrench, FaStopCircle, FaCogs, FaOilCan, FaRoad];
+function TexasIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 40 40" className={className} fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="20" cy="20" r="16" opacity="0.15" />
+      <path d="M20 8 L22 13 L27.5 13.5 L23 18 L24.5 24 L20 21 L15.5 24 L17 18 L12.5 13.5 L18 13 Z" stroke="currentColor" strokeWidth="1.2" fill="none" />
+    </svg>
+  );
+}
+
+const iconMap = [FaCar, FaFilter, FaWrench, FaStopCircle, FaCogs, FaOilCan, FaRoad, FaTools, TexasIcon];
 
 export default function Services() {
   const { t } = useLanguage();
@@ -51,7 +61,7 @@ export default function Services() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 whileHover={{ y: -4 }}
                 className={`group relative overflow-hidden rounded-2xl border border-white/10 bg-dark-secondary/60 backdrop-blur-sm p-6 md:p-7 transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 ${
-                  i === 0 ? "sm:col-span-2 lg:col-span-2 xl:col-span-2" : ""
+                  i === 0 || i === 7 || i === 8 ? "sm:col-span-2 lg:col-span-2 xl:col-span-2" : ""
                 }`}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 transition-transform group-hover:scale-150 group-hover:bg-primary/10" />
