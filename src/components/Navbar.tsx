@@ -56,19 +56,19 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <button
             onClick={() => scrollTo("home")}
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-3 group shrink-0"
           >
-            <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-primary flex items-center justify-center font-bold text-white text-sm md:text-base transition-transform group-hover:scale-105">
-              CM
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="text-white font-bold text-sm md:text-lg tracking-tight">
-                C&M Tires & Muffler
-              </span>
-              <span className="hidden sm:inline-flex text-[10px] md:text-xs font-semibold text-white bg-primary/90 px-2.5 py-1 rounded-full leading-tight whitespace-nowrap">
-                {t.discount.badge}
-              </span>
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="C&M Tires and Muffler"
+              width={150}
+              height={50}
+              className="w-auto object-contain"
+              priority
+            />
+            <span className="hidden sm:inline-flex text-[10px] md:text-xs font-semibold text-white bg-primary/90 px-2.5 py-1 rounded-full leading-tight whitespace-nowrap">
+              {t.discount.badge}
+            </span>
           </button>
 
           <div className="hidden md:flex items-center gap-2">

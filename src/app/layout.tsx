@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
+    icon: "/images/logo.png",
   },
 };
 
@@ -58,7 +58,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   name: "C&M Tires and Muffler",
-  image: "https://cmtiresandmuffler.com/favicon.svg",
+  image: "https://cmtiresandmuffler.com/images/logo.png",
   url: "https://cmtiresandmuffler.com",
   telephone: "+19724428395",
   address: {

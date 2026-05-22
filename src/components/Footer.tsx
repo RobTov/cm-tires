@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import {
   FaMapMarkerAlt,
@@ -22,19 +23,20 @@ export default function Footer() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
-          <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-full bg-primary flex items-center justify-center font-bold text-white text-sm">
-                CM
+            <div>
+              <div className="mb-4">
+                <Image
+                  src="/images/logo.png"
+                  alt="C&M Tires and Muffler"
+                  width={200}
+                  height={60}
+                  className="w-auto object-contain"
+                />
               </div>
-              <span className="text-white font-bold text-lg">
-                C&M Tires & Muffler
-              </span>
+              <p className="text-gray-custom/60 text-sm leading-relaxed">
+                {t.footer.tagline}
+              </p>
             </div>
-            <p className="text-gray-custom/60 text-sm leading-relaxed">
-              {t.footer.tagline}
-            </p>
-          </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">
